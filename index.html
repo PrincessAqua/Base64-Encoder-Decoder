@@ -1,18 +1,61 @@
 <!DOCTYPE html>
-<meta charset = "UTF-8">
-
 <html>
+  <head>
+    <meta charset = "UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href ="styles.css" rel="stylesheet">
+    <title>Base64 Encoder&Decoder</title>
+    <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+    </style>
+    
+  </head>
+  
+  <body>
+    <p id="title" >Base64 Encoder & Decoder</p>
+    <main>
+      <div class"aluraImage">
+        <img class="aluraLogo" src="./rsc/Vector.svg" alt="Alura logo">
+      </div>
+      <div class="content">
+         
+        <div class="userTextArea">
+          <textarea id="userTextArea" rows="10" cols="60" placeholder="Put your text here" ></textarea>
+          <hr>
+          <p class="warning" >
+            <img id="warningLogo" src="./rsc/warning.svg">
+          </p>
+          <p id="warningText">It doesn't work with special characters. ( ñ , é , ' )</p>
+          <button class="buttons" id ="encodeButton">Encode</button>
+          <button class="buttons" id ="decodeButton">Decode</button>
+          
+        </div>
+        
+        <div class="textSpace">
+          <textarea readonly id ="globalTextArea" cols="60" rows="10">Output Text</textarea>
+          <button class="buttons" id ="copyButton">Copy</button>
+        </div>
 
-    <input id = "globalInput"/>
-    <button id ="encodeButton">Encode Button</button>
-    <button id ="decodeButton">Decode Button</button>
-
-
-    <p id="globalTextArea">Text:</p>
-      
-
-
-
+        <div class="image">
+          <img class="animeGirl" src="./rsc/cuteanimegirl.png">
+        </div>
+        
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <p class="footerP">
+          Made By: Princess Aqua
+        </p><p class="footerP">
+          <a href="https://github.com/PrincessAqua" target="_blank">GitHub</a>
+        </p>
+        <p class="footerP">
+          <a href="https://www.linkedin.com/in/donaldo-salcido-8744b4246/" target="_blank">Linkedin</a>
+        </p>
+      </div>
+    </footer>
+    
+  </body>
 </html>
 
 <script type="module" src="./main.js"></script> 

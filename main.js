@@ -2,13 +2,12 @@ import * as encode from "./encode.js";
 import * as decode from "./decode.js";
 
 
-var userInput = document.getElementById("globalInput");
+var userInput = document.getElementById("userTextArea");
 
 
 var encodeButton = document.getElementById("encodeButton");
 var decodeButton = document.getElementById("decodeButton");
-
-userInput.placeholder = "Introduzca el Texto";
+var copyButton = document.getElementById("copyButton");
 
 
 function encodeText()
@@ -56,5 +55,13 @@ function decodeText()
   
 }
 
+function copyText()
+{
+  let input = document.getElementById("globalTextArea");
+  input.select();
+  document.execCommand("copy");
+}
+
 encodeButton.onclick = encodeText;
 decodeButton.onclick = decodeText;
+copyButton.onclick = copyText;
