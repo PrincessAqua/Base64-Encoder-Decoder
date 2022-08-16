@@ -1,5 +1,5 @@
 # Base64-Encoder-Decoder
-This is a encoder & decoder from text to base64
+This is a encoder & decoder from text to base64,
 the most of the program is basically a lot of nested loops and arrays
 
 Its encode the text this way:
@@ -7,10 +7,10 @@ Its encode the text this way:
 -->The user input a string
 -->The string is converted into an array of characters
 -->The array of caracters is converted into decimal -> binary format
--->The groups of bites are separen into groups of 6 bites
+-->The groups of bites are separated into groups of 6 bites
 -->We "encode" those 6bits groups witch a switch case that containts the caracters from 0 to 63
 -->The groups of 6 bits are saved into a character array
--->The character array is converted into a strin end then output
+-->The character array is converted into a strin and then we output it
 
 It may cause problems with the use of special characters like ñ, é, ', etc
 
